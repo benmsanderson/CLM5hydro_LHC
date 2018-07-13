@@ -67,7 +67,7 @@ model = Sequential()
 model.add(Dense(10, input_dim=inputdata.shape[1], activation='relu',
     kernel_regularizer=l2(.001)))
 # second layer with 4 nodes and hyperbolic tangent activation
-model.add(Dense(2, activation='tanh', kernel_regularizer=l2(.001)))
+model.add(Dense(5, activation='tanh', kernel_regularizer=l2(.001)))
 # output layer with linear activation
 model.add(Dense(1))
 #model.add(Dense(1, activation='relu')) 
